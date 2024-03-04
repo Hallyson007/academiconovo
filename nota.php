@@ -9,10 +9,10 @@
     <script type="text/javascript" src="script/codigo.js"></script>
 </head>
 
-<body id="Nota">
+<body id="nota">
     <a href="index.php">Início</a>
     <h1>Cadastro das Notas dos Alunos</h1>
-    <form onsubmit="event.preventDefault(); calcularMedia();">
+     <form onsubmit="event.preventDefault(); calcularMedia();" action="media.php" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome">
         <label for="serie">Série:</label>

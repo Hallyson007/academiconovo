@@ -7,7 +7,8 @@
     <title>cadastro de curso</title>
 </head>
 
-<body>
+<body id="salvarcurso">
+    <a href="index.php">Início</a>
 <?php
 $nome = $_POST['aluno'];
 $curso = $_POST['curso'];
@@ -64,6 +65,13 @@ $diciplinas = array("redes de computadores","algoritmos","manutencao de computad
 foreach ($diciplinas as $materias ) {
     echo $materias. '<br>';
 }
+
+
+function imprimirMedia($prova1, $prova2){
+    $media = ($prova1 + $prova2) / 2;
+    echo "A média do aluno é: ". $media;
+    }
+    imprimirMedia(7.0,8.0);
 ?>
 
 
